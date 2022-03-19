@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>神機廟算｜淨車儀式</title>
+<style type="text/css">
+body {
+    background-image: url(../img/BG.png);
+    text-align: left;
+}
+.input{
+	font-size: 80px;
+	color: #000000;
+	background-color: rgba(255,255,255,0.50);
+	borde0-styler:none;
+	border-radius:50px;
+	font-family: 標楷體;
+}
+.fieldName{
+	font-size:80px;
+	color:#E0B96C;
+}
+.checked{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+.label_checked{
+	color: #000000;
+	text-align: center;
+	background-color: rgba(255,255,255,0.50);
+	border-radius:30px;
+}
+body,td,th {
+    font-size: 50px;
+}
+</style>
+</head>
+
+<body>
+<p style="line-height: 50px">&nbsp;</p>
+<p style="text-align: left"><img src="../img/serve/淨車預約.png" width="626" height="213" alt=""/></p>
+<form style="font-family: 標楷體;">
+	<p class="fieldName">姓　　名
+	<input type="text" required="required" class="input" size="5">
+	</p>
+	<p class="fieldName">連絡電話
+	<input type="text" required="required" class="input" size="10">
+	</p>
+  <p class="fieldName">電子信箱
+	<input type="email" required="required" class="input" size="12">
+	</p>
+	<p class="fieldName">車子類型<br>
+	  <label class="label_checked" style="">
+	    <input name="vehicle" type="radio" required="required" class="checked" id="vehicle_0" value="locomotive" checked="checked">
+	    機車</label>
+	  <br>
+	  <label class="label_checked">
+	    <input name="vehicle" type="radio" required="required" class="checked" id="vehicle_1" value="car">
+	    汽車</label>
+	  <br>
+	  <label class="label_checked">
+	    <input name="vehicle" type="radio" required="required" class="checked" id="vehicle_2" value="truck">
+	    貨車</label>
+	  <br>
+    </p>
+  <p style="text-align: center"><input type="image" src="../img/serve/提交.png" width="618" height="192" onClick="document.formname.submit();"></p>
+</form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

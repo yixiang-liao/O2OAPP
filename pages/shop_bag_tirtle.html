@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>神機廟算｜長壽烏龜帆布袋</title>
+<style type="text/css">
+body {
+    background-image: url(../img/BG.png);
+}
+</style>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+//獲得文字框物件
+var t = $("#text_box");
+//初始化數量為1,並失效減
+$('#min').attr('disabled',true);
+//數量增加操作
+$("#add").click(function(){ 
+// 給獲取的val加上絕對值，避免出現負數
+t.val(Math.abs(parseInt(t.val())) 1);
+if (parseInt(t.val())!=1){
+$('#min').attr('disabled',false);
+};
+}) 
+//數量減少操作
+$("#min").click(function(){
+t.val(Math.abs(parseInt(t.val()))-1);
+if (parseInt(t.val())==1){
+$('#min').attr('disabled',true);
+};
+})
+});
+</script> 
+</head>
+
+<body>
+<p style="line-height: 300px">&nbsp;</p>
+<p style="text-align: center"><img src="../img/shop/商品頁_龜_帆布袋.png" width="890" height="860" alt=""/></p>
+<p style="text-align: center;font-family: 標楷體;font-size: 80px;color: #FFFFFF;">龜鶴遐壽，歲歲平安<br>
+平安長壽寓意帆布袋</p>
+<div style="font-family: 標楷體;text-align: center">
+<input id="min" name="" type="button" value="-" style="font-size: 80px;width: 80px"/> 
+<input id="text_box" name="" type="text" value="1" style="width:80px;text-align: center;font-size: 80px"/> 
+<input id="add" name="" type="button" value="+" style="font-size: 80px;width: 80px"/> 
+	</div>
+<p style="text-align: center"><input type="image" src="../img/shop/加進購物車.png" width="618" height="192" onClick="document.formname.submit();"></p>
+</body>
+</html>
