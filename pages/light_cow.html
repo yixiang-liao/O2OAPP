@@ -20,13 +20,24 @@ body {
 	font-size:80px;
 	color:#E0B96C;
 }
+.checked{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+.label_checked{
+	color: #000000;
+	text-align: center;
+	background-color: rgba(255,255,255,0.50);
+	border-radius:30px;
+}
 </style>
 </head>
 
 <body>
 <p style="line-height: 100px">&nbsp;</p>
 <p style="line-height: 50px">&nbsp;</p>
-<p style="text-align: left"><img src="../img/serve/改運預約.png" width="1048" height="224" alt=""/></p>
+<p style="text-align: left"><img src="../img/serve/點燈預約.png" width="626" height="213" alt=""/></p>
 <form style="font-family: 標楷體;">
 	<p class="fieldName">姓　　名
 	<input type="text" required="required" class="input" size="5">
@@ -43,9 +54,18 @@ body {
 	<p class="fieldName">生辰八字
 	<input type="text" required="required" class="input" size="12">
 	</p>
-	<p class="fieldName">預約日期
-	<input type="date" required="required" style="font-size: 80px;font-family: 標楷體;text-align: center;background-color: rgba(255,255,255,0.50);color: #000000;border-radius:50px">
-	</p>
+	<p class="fieldName">付款方式<br>
+	  <label class="label_checked" style="">
+	    <input name="vehicle" type="radio" required="required" class="checked" id="vehicle_0" value="locomotive" checked="checked">
+	    信用卡</label>
+	  <br>
+	  <label class="label_checked">
+	    <input name="vehicle" type="radio" required="required" class="checked" id="vehicle_1" value="car">
+	    銀行轉帳</label>
+	  <br>
+    </p>
+	
+	
 <p style="text-align: center"><a href="drawlots_2.html"><img src="../img/serve/提交.png" width="618" height="192" alt=""/></a></p>
 <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tbody>
